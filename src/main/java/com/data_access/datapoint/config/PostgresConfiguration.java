@@ -40,7 +40,7 @@ public class PostgresConfiguration {
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
         Map<String, Object> properties = new HashMap<>();
-        properties.put("hibernate.hbm2ddl.auto", "none");
+        properties.put("hibernate.hbm2ddl.auto", "update");
         properties.put("hibernate.jdbc.batch_size", 10000);
         properties.put("hibernate.order_inserts", true);
         properties.put("hibernate.order_updates", true);
