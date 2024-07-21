@@ -50,7 +50,7 @@ public class OkxSwapEntity {
     @Column(name="sod_utc8", columnDefinition = "varchar(32)")
     private String sodUtc8;
 
-    @Column(name="created_at", nullable = false, columnDefinition = "timestamp with time zone default now()")
-    private Date createdAt;
+    @Column(name="created_at", columnDefinition = "timestamp with time zone default now()")
+    private Date createdAt = new Date();
 
 }
